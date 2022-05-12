@@ -1,4 +1,35 @@
-h1,
-h3 {
-  font-family: "Bangers";
+
+
+
+
+.logobiom {
+  display: flex;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: x-large;
+  color: rgb(138, 138, 128);
+  justify-content: center;
+  align-content: center;
+ margin-left: 35%;
+ 
+  height: 100px;
+
+
 }
+
+.plante{ 
+  display: flex;
+align-items: center;
+  max-width: 100px;
+  margin-bottom: 40%;
+}
+
+.flexmoi {
+
+height: 500px;
+align-items: center;
+display: flex;
+justify-content: center;
+
+
+}
+
