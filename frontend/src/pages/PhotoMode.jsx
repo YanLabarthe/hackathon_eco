@@ -1,26 +1,78 @@
 import React, { useRef, useState } from "react";
 import Webcam from "react-webcam";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function PhotoMode() {
   const inputFile = useRef();
-  const [imagePreview, setImagePreview] = useState("");
+  const [photo, setPhoto] = useState("");
 
   const handlePhotoChange = (event) => {
     if (event.target.files.length > 0) {
       const src = URL.createObjectURL(event.target.files[0]);
-      setImagePreview(src);
+      setPhoto(src);
     }
   };
 
   return (
     <div className="flex flex-col bg-neutral-900 h-screen w-auto mx-auto justify-center items-center">
-      {/* <Webcam className="h-full w-auto mx-auto" /> */}
-
-      {imagePreview && (
+      <Webcam className="h-full w-auto mx-auto" />
+      {photo && (
         <>
-          <h1>PREVIEW</h1>
-          <img src={imagePreview} width="200" />
+          <div className="flex flex-col space-y-4 min-w-screen h-screen animated fadeIn faster  fixed  left-0 top-0 flex justify-center items-center inset-0 z-50 outline-none focus:outline-none ">
+            <div className="flex flex-col relative mx-auto inset-x-0 text-center bottom-20 bg-gray-100 border-2 border-black rounded-lg">
+              <div className="flex items-center justify-between pr-2">
+                <div className="flex items-center">
+                  <img
+                    src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-blue-select?wid=940&hei=1112&fmt=png-alpha&.v=1645552346295"
+                    alt="iphone 13"
+                    className="w-auto h-20 pb-2"
+                  />
+                  <div className="flex flex-col ml-3">
+                    <div className="font-medium text-black leading-none ">
+                      Iphone 13 pro
+                    </div>
+                    <div className="text-sm text-black leading-none mt-1">
+                      Produit électronique - téléphone portable
+                    </div>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  className="flex-no-shrink bg-green-700 px-5 ml-4 py-2 text-sm shadow-sm hover:shadow-lg font-medium tracking-wider border-2 border-green-800 text-white rounded-full"
+                >
+                  Recycle
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col space-y-4 min-w-screen h-screen animated fadeIn faster  fixed  left-0 top-20 flex justify-center items-center inset-0 z-50 outline-none focus:outline-none ">
+            <div className="flex flex-col relative mx-auto inset-x-0 text-center bottom-20 bg-gray-100 border-2 border-black rounded-lg">
+              <div className="flex items-center justify-between pr-2">
+                <div className="flex items-center">
+                  <img
+                    src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone11-purple-select-2019_GEO_EMEA?wid=940&hei=1112&fmt=png-alpha&.v=1567021766320"
+                    alt="iphone"
+                    className="w-auto h-20 pb-2"
+                  />
+                  <div className="flex flex-col ml-3">
+                    <div className="font-medium text-black leading-none ">
+                      Iphone 12
+                    </div>
+                    <div className="text-sm text-black leading-none mt-1">
+                      Produit électronique - téléphone portable
+                    </div>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  className="flex-no-shrink bg-green-700 px-5 ml-4 py-2 text-sm shadow-sm hover:shadow-lg font-medium tracking-wider border-2 border-green-800 text-white rounded-full"
+                >
+                  Recycle
+                </button>
+              </div>
+            </div>
+          </div>
         </>
       )}
 
@@ -46,6 +98,7 @@ function PhotoMode() {
         ref={inputFile}
         name="photo"
         type="file"
+        className="hidden"
       />
     </div>
   );
