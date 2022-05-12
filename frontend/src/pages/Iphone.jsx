@@ -1,5 +1,5 @@
 function Iphone() {
-  return <div className="">lol</div>;
+  return <div className="">eazeaz</div>;
 }
 
 export default Iphone;
