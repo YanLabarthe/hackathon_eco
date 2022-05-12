@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Scan() {
-  return (
-    <div>Scan</div>
-  )
+  return <div>Scan</div>;
 }
 
-export default Scan
+export default Scan;

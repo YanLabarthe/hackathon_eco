@@ -1,4 +1,3 @@
-
 import logobiom from "@assets/images/Biom-logo.png";
 import { Link } from "react-router-dom";
 import LogoAnime from "./LogoAnime";
@@ -10,9 +9,9 @@ export default function Home() {
       <div className="flex-logo">
         <div>
           <Link to="/Userprofile">
-          <div className="header"> Virginie</div>
+            <div className="header"> Virginie</div>
           </Link>
-          <img className="logobiom" img src={logobiom} />
+          <img className="logobiom" img src={logobiom} alt="plante" />
           <h1>Recylez Facilement</h1>
         </div>
       </div>
@@ -20,9 +19,11 @@ export default function Home() {
         <Link to="/PhotoMode">
           <LogoAnime />
         </Link>
-        <Link className="Linktoprofile" to="/Userprofile"> <h2>User Profil</h2> </Link> 
+        <Link className="Linktoprofile" to="/Userprofile">
+          {" "}
+          <h2>User Profil</h2>{" "}
+        </Link>
       </div>
     </div>
   );
 }
-
