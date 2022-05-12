@@ -1,4 +1,6 @@
-// import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import PhotoMode from "@pages/PhotoMode";
+import Iphone from "@pages/Iphone";
 import "../index.css";
 
 function App() {
@@ -39,7 +41,12 @@ function App() {
   );
   */
 
-  return <div>Home sans routes</div>;
+  return (
+    <Routes>
+      <Route path="/" element={<PhotoMode />} />
+      <Route path="/iphone" element={<Iphone />} />
+    </Routes>
+  );
 }
 
 export default App;
