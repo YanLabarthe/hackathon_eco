@@ -4,6 +4,7 @@ import Scan from "@pages/Scan";
 import PhotoMode from "@pages/PhotoMode";
 import Iphone from "@pages/Iphone";
 import "../index.css";
+import Userprofile from "@pages/Userprofile";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/scan" element={<Scan />} />
         <Route path="/" element={<PhotoMode />} />
         <Route path="/iphone" element={<Iphone />} />
+        <Route path="/userprofile" element={<Userprofile />} />
       </Routes>
     </div>
   );
