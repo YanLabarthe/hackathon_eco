@@ -19,7 +19,7 @@
     "husky": "^7.0.0"
   },
   "dependencies": {
-    "@lottiefiles/lottie-interactivity": "^1.5.2",
-    "react-router-dom": "^6.3.0"
+    "react-router-dom": "^6.3.0",
+    "react-webcam": "^7.0.1"
   }
 }
