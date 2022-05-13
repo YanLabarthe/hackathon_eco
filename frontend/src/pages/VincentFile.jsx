@@ -1,4 +1,4 @@
-function VincentFile({ photo }) {
+function VincentFile({photo}) {
   const vincentDta = {
     name: "Vincent Vaur",
     img: "https://i.ibb.co/KzqQkpj/PXL-20220512-092514918-PORTRAIT.jpg",
@@ -76,8 +76,8 @@ function VincentFile({ photo }) {
       <div className=" bg-cover bg-center h-full w-full bg-green-200 p-10 text-black ">
       <img
               className="mx-auto rounded-lg h-30 w-[50%]"
-              src={vincentDta.img}
-              alt={""}
+              src={photo}
+              alt={photo}
             />
         <div className="rounded-lg  m-0 shadow-lg flex bg-green-100">
           <div className="">
@@ -88,20 +88,21 @@ function VincentFile({ photo }) {
             </div>
             <div className="flex-1 card-block relative">
               <div className="p-6">
-                <h2 className="font medium text-3xl text-green-500 mb-3">{vincentDta.name}</h2>
-                <p className="text-2xl mt-2">Composition</p>
-                <h3 className="text-xl">Categorie:{vincentDta.Name}</h3>
-                <h3 className="text-xl">bierre: {vincentDta.bierre}%</h3>
-                <h3 className="text-xl">punk: {vincentDta.punk}%</h3>
-                <h3 className="text-xl">clope: {vincentDta.clope}%</h3>
-                <h3 className="text-xl">
+                <div className="font medium text-3xl text-green-500 text-center mb-3">{vincentDta.name}</div>
+                <div className="text-2xl mt-2 text-center">Composition</div>
+                <div className="text-xl text-center">Categorie:{vincentDta.Name}</div>
+                <div className="text-xl text-center">
                   javascript: {vincentDta.javascript}%
-                </h3>
-                <h3 className="text-xl">
-                  Eco impact: {vincentDta.ecoImpact}
-                </h3>
-                <div>
-                  <h2 className="font medium text-2xl mb-3">Information</h2>
+                </div>
+                <div className="text-xl text-center">bierre: {vincentDta.bierre}%</div>
+                <div className="text-xl text-center">punk: {vincentDta.punk}%</div>
+                <div className="text-xl text-center">clope: {vincentDta.clope}%</div>
+ 
+                <div className="text-xl text-center">
+                  Eco impact: {vincentDta.ecoImpact}%
+                </div>
+                <div className="text-center">
+                  <div className="font medium  text-green-500 text-3xl mb-3 text-center">Information</div>
                   <button type="button" onClick={onClick}>
                     <svg
                       className="w-6 h-6 text-blue-500 fill-current"

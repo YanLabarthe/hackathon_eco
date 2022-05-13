@@ -1,4 +1,4 @@
-function JonathanData(){
+function JonathanData({photo}){
 const jonathanData={
     Name: "Human",
     name: "Jonathan Siaut ",
@@ -73,27 +73,27 @@ const jonathanData={
         <>
 
         
-      <div className="bg-cover bg-center h-full w-full absolute bg-pack-train p-10 text-black">
+      <div className="bg-cover bg-center text-center h-full w-full absolute bg-pack-train p-10 text-black">
         <div className="rounded-lg">
-          <div></div>
+          
       <img
         className="w-[50%] shadow-md rounded-lg mx-auto"
-        src={jonathanData.img}
-        alt={jonathanData}
+        src={photo}
+        alt={photo}
       />
 
 <div className="relative px-2 -mt-5">
-              <div className="bg-green-200 rounded-lg shadow-md">
+              <div className="bg-green-100 rounded-lg shadow-md">
 
-<div className="text-3xl ">{jonathanData.name}</div>
-      <div className="text-3xl mt-2">Composition</div>
-      <div className="text-2xl">Catogorie:{' '}  {jonathanData.Name}</div>
+<div className="text-3xl text-green-500  ">{jonathanData.name}</div>
+      <div className="text-3xl text-green-500  mt-2">Composition</div>
+      <div className="text-xl">Catogorie:{' '}  {jonathanData.Name}</div>
       <div className="text-xl">Basket:{' '}  {jonathanData.basket}%</div>
       <div className="text-xl">bierre:{' '}  {jonathanData.bierre}%</div>
       <div className="text-xl">Data: {' '} {jonathanData.data}%</div>
       <div className="text-xl">Eco impact: {' '} {jonathanData.ecoImpact}</div>
-      <div>
-     
+      <div className="text-center">
+      <div className="font medium  text-green-500 text-3xl mb-3 text-center">Information</div>
       <button type="button" onClick={onClick}>
         <svg
           className="w-6 h-6 text-blue-500 fill-current"

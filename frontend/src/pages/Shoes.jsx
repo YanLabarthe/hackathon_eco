@@ -112,13 +112,13 @@ function Shoes({photo}){
 
     return (
         <>
-<div className="bg-green-200 h-full max-w-[80%] mx-auto text-black">
+<div className="bg-center text-center h-full w-full absolute  p-10 text-black">
     <div className="rounded-lg">
 <div>
-<img  className="w-[40%] shadow-md rounded-lg mx-auto " src={shoe.img}/>
+<img  className="w-[40%] shadow-md rounded-lg mx-auto " src={photo}/>
 <div className="relative px-2 -mt-10">
 <div className="bg-green-100 rounded-lg shadow-md">
-<div className="text-2xl mt-5 items-center">Caractéristiques</div>
+<div className="text-2xl text-green-500 mt-5 items-center">Caractéristiques</div>
 <div className="text-xl">name:{shoe.name}</div>
 <div className="text-xl">poids:{shoe.poids}</div>
 <div className="text-xl">cloth:{shoe.cloth}%</div>
