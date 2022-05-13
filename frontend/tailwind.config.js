@@ -2,13 +2,9 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     backgroundImage: {
-<<<<<<< HEAD
-      'pack-train': "url('./assets/images/fondunis.jpg')",
-=======
 
       'pack-train': "url('./assets/images/fondunis.jpg')",
 
->>>>>>> 392aef672df045460e9c2096ca44e589f316aade
     },
     extend: {
       keyframes: {
