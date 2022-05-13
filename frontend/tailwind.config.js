@@ -2,7 +2,8 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     backgroundImage: {
-      'pack-train': "url('https://cdn.pixabay.com/photo/2022/04/11/18/18/earth-day-7126390_1280.png')",
+      "pack-train":
+        "url('https://cdn.pixabay.com/photo/2022/04/11/18/18/earth-day-7126390_1280.png')",
     },
     extend: {
       keyframes: {
@@ -17,7 +18,7 @@ module.exports = {
           "100%": { transform: "rotate(0.0deg)" },
         },
       },
-      
+
       animation: {
         "waving-hand": "wave 2s linear infinite",
       },

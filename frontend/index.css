@@ -8,8 +8,6 @@
   margin-top: 70%;
 }
 
-
-
 h1 {
   margin-top: 50px;
   font-family: "Poppins";
@@ -18,8 +16,7 @@ h1 {
   color: rgb(37, 36, 24);
 }
 
-h3{
-
+h3 {
   font-family: "Poppins";
 }
 .logobiom {
@@ -30,7 +27,6 @@ h3{
   justify-content: center;
   align-content: center;
   margin-left: 60px;
-
 
   height: 100px;
 }
@@ -47,13 +43,11 @@ h3{
 .flexmoi {
   height: 800px;
 
-
   align-items: center;
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   text-align: center;
   flex-direction: column;
-  
 }
 
 h2 {
@@ -66,9 +60,9 @@ h2 {
 
 .header {
   display: flex;
-width: 400px;
-background-color: rgba(0, 0, 0, 0.527);
-margin-bottom: 800px;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.527);
+  margin-bottom: 800px;
   font-family: "Poppins";
   color: rgb(223, 236, 223);
   position: absolute;
