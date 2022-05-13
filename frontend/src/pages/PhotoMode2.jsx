@@ -48,51 +48,18 @@ function PhotoMode2({ photo, setPhoto }) {
             </div>
           </Link>
 
-{/*           <Link to="chausson">
-            <div className="flex flex-col space-y-4 min-w-screen h-screen animated fadeIn faster  fixed  left-0 top-[90px] flex justify-center items-center inset-0 z-50 outline-none focus:outline-none ">
-              <div className="flex flex-col relative mx-auto inset-x-0 text-center bottom-20 bg-gray-100 border-2 border-black rounded-lg">
-                <div className="flex items-center justify-between pr-2">
-                  <div className="flex items-center">
-                    <img
-                      src="
-                      http://t0.gstatic.com/shopping?q=tbn:ANd9GcSuj4Vmv81i3Rh5sqq5f-W41ehiEMr6IKGCHsBehe8oVVnkbolDlJafCpoWv3fbAHohJejJEulW6frHOyL8nXFqAFiRkrrDjEjvs_J6UVTReWj8LFNPRhYN7wyE&usqp=CAY"
-                      alt="iphone"
-                      className="w-auto h-20 pb-2"
-                    />
-                    <div className="flex flex-col ml-3">
-                      <div className="font-medium text-black leading-none ">
-                        Chausson
-                      </div>
-                      <div className="text-sm text-black leading-none mt-1">
-                        Vêtement - chaussure
-                      </div>
-                    </div>
-                  </div>
-                  <button
-                    type="button"
-                    className="flex-no-shrink bg-green-400 px-5 ml-4 py-2 text-sm shadow-sm hover:shadow-lg font-medium tracking-wider border-2 border-green-800 text-black rounded-full"
-                  >
-                    Recycle
-                  </button>
-                </div>
-              </div>
-            </div>
-          </Link>
-
-          <Link to="/addproduct">
-            <div className="flex flex-col space-y-4 min-w-screen h-screen animated fadeIn faster  fixed  left-0 top-[165px] flex justify-center items-center inset-0 z-50 outline-none focus:outline-none ">
-              <div className="flex flex-col relative mx-auto inset-x-0 text-center bottom-20 bg-gray-100 border-2 border-black rounded-lg">
-                <div className="flex items-center justify-between p-3">
-                  Le produit n'est pas dans la selection
-                </div>
-              </div>
-            </div>
-          </Link> */}
-                    <div className="flex flex-col space-y-4 min-w-screen h-screen animated fadeIn faster  fixed  left-0 top-[165px] justify-center items-center inset-0 z-50 outline-none focus:outline-none ">
+          <div className="flex flex-col space-y-4 min-w-screen h-screen animated fadeIn faster  fixed  left-0 top-[100px] justify-center items-center inset-0 z-50 outline-none focus:outline-none ">
             <div className="flex flex-col relative mx-auto inset-x-0 text-center bottom-20 bg-gray-100 border-2 border-black rounded-lg">
-              <Link to="/iphone">
+              <Link to="/shoe">
                 <div className="flex items-center justify-between p-3">
-                  Produit photographié - Iphone 12
+                  Produit photographié - Chaussure irrécupérable
+                </div>
+              </Link>
+            </div>
+            <div className="flex flex-col relative mx-auto inset-x-0 text-center bottom-20 bg-gray-100 border-2 border-black rounded-lg">
+              <Link to="/addproduct">
+                <div className="flex items-center justify-between p-3">
+                  L'objet n'est pas listé
                 </div>
               </Link>
             </div>
