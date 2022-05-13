@@ -28,10 +28,10 @@ function App() {
     <div className="homepage">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/vincent" element={<VincentFile/>} />
+        <Route path="/vincent" element={<VincentFile photo={photo}/>} />
         <Route path="/jonathan1" element={<JonathanFile />} />
         <Route path="/jonathan2" element={<JonathanData />} />
-        <Route path="/iphonedouze" element={<IphoneDouze />} />
+        <Route path="/iphonedouze" element={<IphoneDouze photo={photo} />} />
         <Route path="/shoes" element={<Shoes />} />
         <Route
           path="/photomode"
