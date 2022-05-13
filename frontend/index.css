@@ -1,4 +1,166 @@
-h1,
-h3 {
-  font-family: "Bangers";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+.Linktoprofile {
+  height: 20px;
+
+  color: rgb(79, 77, 47);
+
+  margin-top: 70%;
+}
+
+
+
+h1 {
+  margin-top: 50px;
+  font-family: "Poppins";
+  text-align: center;
+  font-size: 25px;
+  color: rgb(37, 36, 24);
+}
+
+h3{
+
+  font-family: "Poppins";
+}
+.logobiom {
+  display: flex;
+  font-family: "Poppins";
+  font-size: x-large;
+  color: rgb(138, 138, 128);
+  justify-content: center;
+  align-content: center;
+  margin-left: 60px;
+
+
+  height: 100px;
+}
+
+.plante {
+  display: flex;
+  align-items: center;
+  max-width: 100px;
+
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.flexmoi {
+  height: 800px;
+
+
+  align-items: center;
+  display: flex;
+  justify-content:space-around;
+  text-align: center;
+  flex-direction: column;
+  
+}
+
+h2 {
+  height: 20px;
+  font-family: "Poppins";
+  color: rgb(79, 77, 47);
+  text-align: center;
+  margin-top: 70%;
+}
+
+.header {
+  display: flex;
+width: 400px;
+background-color: rgba(0, 0, 0, 0.527);
+margin-bottom: 800px;
+  font-family: "Poppins";
+  color: rgb(223, 236, 223);
+  position: absolute;
+}
+/* css pour logo intro */
+.title {
+  justify-content: center;
+  background-color: #fff8cf;
+  text-align: center;
+}
+
+.container {
+  display: block;
+  position: relative;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  padding: auto;
+  align-items: auto;
+  justify-content: auto;
+  margin-right: 100px;
+  margin-bottom: 290px;
+}
+svg {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-name {
+  display: flex;
+  position: absolute;
+  top: 150px;
+  left: 300px;
+}
+
+.icon-arrow {
+  background-color: red;
+}
+
+.icon-bag {
+  display: block;
+  position: absolute;
+  top: 140px;
+  left: 100px;
+  background-color: transparent;
+}
+
+.icon-leaf {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 25px;
+  background-color: transparent;
+}
+
+.arrow {
+  -webkit-animation: rotation 3s infinite linear;
+  -moz-animation: rotation 3s infinite linear;
+  -o-animation: rotation 3s infinite linear;
+  animation: rotation 3s infinite linear;
+  transform-origin: 102px 94px;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@-moz-keyframes rotation {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(359deg);
+  }
+}
+@-o-keyframes rotation {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(359deg);
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
