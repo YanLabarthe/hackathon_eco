@@ -3,7 +3,7 @@ import Webcam from "react-webcam";
 import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 
-function PhotoMode({ photo, setPhoto }) {
+function PhotoMode2({ photo, setPhoto }) {
   const inputFile = useRef();
 
   const handlePhotoChange = (event) => {
@@ -48,7 +48,7 @@ function PhotoMode({ photo, setPhoto }) {
             </div>
           </Link>
 
-          <Link to="chausson">
+          {/*           <Link to="chausson">
             <div className="flex flex-col space-y-4 min-w-screen h-screen animated fadeIn faster  fixed  left-0 top-[90px] flex justify-center items-center inset-0 z-50 outline-none focus:outline-none ">
               <div className="flex flex-col relative mx-auto inset-x-0 text-center bottom-20 bg-gray-100 border-2 border-black rounded-lg">
                 <div className="flex items-center justify-between pr-2">
@@ -87,7 +87,16 @@ function PhotoMode({ photo, setPhoto }) {
                 </div>
               </div>
             </div>
-          </Link>
+          </Link> */}
+          <div className="flex flex-col space-y-4 min-w-screen h-screen animated fadeIn faster  fixed  left-0 top-[165px] justify-center items-center inset-0 z-50 outline-none focus:outline-none ">
+            <div className="flex flex-col relative mx-auto inset-x-0 text-center bottom-20 bg-gray-100 border-2 border-black rounded-lg">
+              <Link to="/shoe">
+                <div className="flex items-center justify-between p-3">
+                  Produit photographié - Chaussure
+                </div>
+              </Link>
+            </div>
+          </div>
         </>
       )}
 
@@ -119,4 +128,4 @@ function PhotoMode({ photo, setPhoto }) {
   );
 }
 
-export default PhotoMode;
+export default PhotoMode2;
