@@ -19,7 +19,7 @@ function PhotoMode3({ photo, setPhoto }) {
       {photo && (
         <>
           <Link to="jonathan1">
-            <div className="flex flex-col space-y-4 min-w-screen h-screen animated fadeIn faster  fixed  left-0 top-0 flex justify-center items-center inset-0 z-50 outline-none focus:outline-none ">
+            <div className="flex flex-col space-y-4 min-w-screen h-screen animated fadeIn faster  fixed  left-0 top-0 justify-center items-center inset-0 z-50 outline-none focus:outline-none ">
               <div className="flex flex-col relative mx-auto inset-x-0 text-center bottom-20 bg-gray-100 border-2 border-black rounded-lg">
                 <div className="flex items-center justify-between pr-2">
                   <div className="flex items-center">
@@ -50,7 +50,7 @@ function PhotoMode3({ photo, setPhoto }) {
           </Link>
 
           <Link to="jonathan2">
-            <div className="flex flex-col space-y-4 min-w-screen h-screen animated fadeIn faster  fixed  left-0 top-[90px] flex justify-center items-center inset-0 z-50 outline-none focus:outline-none ">
+            <div className="flex flex-col space-y-4 min-w-screen h-screen animated fadeIn faster  fixed  left-0 top-[90px] justify-center items-center inset-0 z-50 outline-none focus:outline-none ">
               <div className="flex flex-col relative mx-auto inset-x-0 text-center bottom-20 bg-gray-100 border-2 border-black rounded-lg">
                 <div className="flex items-center justify-between pr-2">
                   <div className="flex items-center">
@@ -81,7 +81,7 @@ function PhotoMode3({ photo, setPhoto }) {
           </Link>
 
           <Link to="vincent">
-            <div className="flex flex-col space-y-4 min-w-screen h-screen animated fadeIn faster  fixed  left-0 top-[90px] flex justify-center items-center inset-0 z-50 outline-none focus:outline-none ">
+            <div className="flex flex-col space-y-4 min-w-screen h-screen animated fadeIn faster  fixed  left-0 top-[90px] justify-center items-center inset-0 z-50 outline-none focus:outline-none ">
               <div className="flex flex-col relative mx-auto inset-x-0 text-center bottom-20 bg-gray-100 border-2 border-black rounded-lg">
                 <div className="flex items-center justify-between pr-2">
                   <div className="flex items-center">
