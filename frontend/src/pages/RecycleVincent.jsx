@@ -1,4 +1,5 @@
 import recycle from "@assets/img/recycl.png";
+
 function RecycleVincent({ photo }) {
   const vins = {
     name: "Vincent Vaur",
@@ -6,28 +7,22 @@ function RecycleVincent({ photo }) {
   };
 
   return (
-    <>
-      <div className="bg-green-200 bg-center h-full w-full  p-10 text-black">
-        <div className="rounded-lg">
-          <img
-            className="md:animate-spin rounded-lg transform"
-            src={vins.img}
-            alt={photo}
-          />
-         
-        
-          <h3 className="mt-10">
+    <div className="bg-green-200 bg-center h-full w-full  p-10 text-black">
+      <div className="rounded-lg">
+        <img
+          className="md:animate-spin rounded-lg transform"
+          src={vins.img}
+          alt={photo}
+        />
 
-              
-              Recycler</h3>
-          
-          <li>hola</li>
-          <li>One</li>
-          <li>Two</li>
-          <li>Three</li>
-        </div>
+        <h3 className="mt-10">Recycler</h3>
+
+        <li>hola</li>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
       </div>
-    </>
+    </div>
   );
 }
 

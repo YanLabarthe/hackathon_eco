@@ -1,9 +1,6 @@
-
 import VincentFile from "@pages/VincentFile";
 import JonathanFile from "@pages/JonathanFile";
 import JonathanData from "@pages/JonathanData";
-import { Routes, Route } from "react-router-dom";
-import Home from "@pages/Home";
 import PhotoMode from "@pages/PhotoMode";
 import { useState } from "react";
 import Iphone from "@pages/Iphone";
@@ -16,8 +13,8 @@ import Shoes from "@pages/Shoes";
 import Adaptateur from "@pages/Adaptateur";
 import RecycleVincent from "@pages/RecycleVincent";
 
-import PhotoMode from "@pages/PhotoMode";
 import Userprofile from "@pages/Userprofile";
+import AddProduct from "@pages/AddProduct";
 
 function App() {
   const [photo, setPhoto] = useState("");
@@ -31,14 +28,18 @@ function App() {
         <Route path="/iphone" element={<Iphone />} />
         <Route path="/shoes" element={<Shoes />} />
         <Route path="/marker" element={<Marqueur />} />
-        <Route path="/photomode" element={<PhotoMode photo={photo} setPhoto={setPhoto}/>} />
-        <Route path="/iphone" element={<Iphone photo={photo}  />} />
+        <Route
+          path="/photomode"
+          element={<PhotoMode photo={photo} setPhoto={setPhoto} />}
+        />
+        <Route path="/iphone" element={<Iphone photo={photo} />} />
         <Route path="/userprofile" element={<Userprofile />} />
         <Route path="/" element={<Home />} />
         <Route path="/photoMode" element={<PhotoMode />} />
         <Route path="/chargeur" element={<Chargeur />} />
         <Route path="/adaptateur" element={<Adaptateur />} />
         <Route path="/reclycleVincent" element={<RecycleVincent />} />
+        <Route path="/addproduct" element={<AddProduct photo={photo} />} />
       </Routes>
     </div>
   );
