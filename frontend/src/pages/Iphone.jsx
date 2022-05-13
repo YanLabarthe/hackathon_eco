@@ -1,4 +1,5 @@
 function Iphone({ photo }) {
+<<<<<<< HEAD
   const iphone = {
     Name: "Mobile Phone",
     name: "iPhone 12",
@@ -124,6 +125,12 @@ function Iphone({ photo }) {
         </div>
       </div>
     </>
+=======
+  return (
+    <div className="">
+      <img src={photo} width="200" alt="iphone" />
+    </div>
+>>>>>>> ce3cb8a8b7becb3973065353abef6d446fd0ba1d
   );
 }
 
