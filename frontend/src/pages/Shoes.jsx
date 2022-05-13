@@ -90,43 +90,39 @@ function Shoes({ photo }) {
             Name: "Clothing",
           },
         ],
-      },
-      {
-        Name: "Canvas",
-        Confidence: 58.37407684326172,
-        Instances: [],
-        Parents: [],
-      },
-      {
-        Name: "Suede",
-        Confidence: 56.06569290161133,
-        Instances: [],
-        Parents: [],
-      },
-    ],
-    LabelModelVersion: "2.0",
-  };
 
-  return (
-    <div className="bg-green-200 h-full max-w-[80%] mx-auto text-black">
-      <div className="rounded-lg">
-        <div>
-          <img className="w-[40%] shadow-md rounded-lg mx-auto " src={photo} />
-          <div className="relative px-2 -mt-10">
-            <div className="bg-green-100 rounded-lg shadow-md">
-              <div className="text-2xl mt-5 items-center">Caractéristiques</div>
-              <div className="text-xl">name:{shoe.name}</div>
-              <div className="text-xl">poids:{shoe.poids}</div>
-              <div className="text-xl">cloth:{shoe.cloth}%</div>
-              <div className="text-xl ">leather:{shoe.leather}%</div>
-              <div className="text-xl">plastic:{shoe.plastic}%</div>
-              <div className="text-xl">ecoImpact:{shoe.ecoImpact}%</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+        LabelModelVersion: "2.0",
+      }
+
+    
+
+
+    return (
+        <>
+<div className="h-full max-w-[80%] mx-auto text-black">
+    <div className="rounded-lg">
+<div>
+<img  className="w-[40%] shadow-md rounded-lg mx-auto " src={photo}/>
+<div className="relative px-2 -mt-10">
+<div className="bg-green-100 rounded-lg shadow-md">
+<div className="text-2xl mt-5 items-center">Caractéristiques</div>
+<div className="text-xl">name:{shoe.name}</div>
+<div className="text-xl">poids:{shoe.poids}</div>
+<div className="text-xl">cloth:{shoe.cloth}%</div>
+<div className="text-xl ">leather:{shoe.leather}%</div>
+<div className="text-xl">plastic:{shoe.plastic}%</div>
+<div className="text-xl">ecoImpact:{shoe.ecoImpact}%</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+        </>
+    )
+
+    
+
+
 }
 
 export default Shoes;

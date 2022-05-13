@@ -96,10 +96,13 @@ function Iphone({ photo }) {
   }
 
   return (
-    <div className="bg-green-200 bg-center h-full w-full absolute  p-10 text-black">
-      <div className="rounded-lg">
-        <div>
-          <img src={photo} alt="iphone" />
+
+    <>
+      <div className=" bg-center h-full w-full absolute  p-10 text-black">
+        <div className="rounded-lg">
+          <div>
+            <img src={photo} alt={photo} />
+
 
           <div className="relative px-2 -mt-5">
             <div className="bg-green-100 rounded-lg shadow-md">
@@ -129,7 +132,9 @@ function Iphone({ photo }) {
           </div>
         </div>
       </div>
-    </div>
+
+    </>
+
   );
 }
 
