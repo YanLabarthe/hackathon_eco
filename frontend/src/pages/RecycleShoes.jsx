@@ -1,22 +1,22 @@
-function RecycleShoes({ photo }) {
-  return (
-    <div className="bg-green-200 bg-center h-full w-full  p-10 text-black">
-      <div className="rounded-lg">
-        <img
-          className="md:animate-spin rounded-lg transform"
-          src={photo}
-          alt={photo}
-        />
 
-        <h3 className="mt-10">Recycler</h3>
+import React from "react";
+import photod from "@assets/images/captureshooes.png"
+import textile from "@assets/images/fichetextile.png"
 
-        <li>hola</li>
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
-      </div>
-    </div>
-  );
-}
+function RecycleShoes( ) {
 
-export default RecycleShoes;
+  
+    return (
+      <>
+      <div className="rounded-lg"></div>
+          <h3 className="mt-10"> Ou recycler votre objet "Chaussures" </h3>
+            
+          <img className="decheterie"  src={photod} alt="photo" />
+          <img className="decheterie"  src={textile} alt="photo" />
+        
+      </>
+    );
+  }
+  
+  export default RecycleShoes;
+

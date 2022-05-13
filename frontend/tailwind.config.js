@@ -2,8 +2,13 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     backgroundImage: {
-      "pack-train":
-        "url('https://cdn.pixabay.com/photo/2022/04/11/18/18/earth-day-7126390_1280.png')",
+<<<<<<< HEAD
+      'pack-train': "url('./assets/images/fondunis.jpg')",
+=======
+
+      'pack-train': "url('./assets/images/fondunis.jpg')",
+
+>>>>>>> 392aef672df045460e9c2096ca44e589f316aade
     },
     extend: {
       keyframes: {
