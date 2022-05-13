@@ -80,6 +80,10 @@ function VincentFile({ photo }) {
           <div className="font medium text-3xl  text-center text-green-500 mb-3">
             {vincentDta.name}
           </div>
+          <img
+            src="https://i.ibb.co/KzqQkpj/PXL-20220512-092514918-PORTRAIT.jpg"
+            className="mx-auto rounded-lg h-30 w-[50%]"
+          />
           <div className="text-2xl text-center mt-2">Composition</div>
           <div className="text-xl text-center">Categorie:{vincentDta.Name}</div>
           <div className="text-xl text-center">
@@ -95,14 +99,11 @@ function VincentFile({ photo }) {
           </h3>
 
           <Link to="/reclyclevincent">
-              <button
-                className="bg-blue-500 hover:bg-700 text-white font-bold py-2 px-4 mb-2 rounded"
-                
-              >
-                Recycler
-              </button>
-              </Link>
-     
+            <button className="bg-blue-500 hover:bg-700 text-white font-bold py-2 px-4 mb-2 rounded">
+              Recycler
+            </button>
+          </Link>
+
           <div className="text-center">
             <h2 className="font medium text-2xl mb-4">Information</h2>
             <button type="button" onClick={onClick}>
