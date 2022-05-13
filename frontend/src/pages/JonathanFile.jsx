@@ -1,4 +1,4 @@
-function JonathanFile() {
+function JonathanFile({photo}) {
   const jonathanDta = {
     name: "Jonathan Plantey ",
     img: "https://i.ibb.co/25zPvzv/PXL-20220512-100022411-PORTRAIT.jpg",
@@ -77,22 +77,23 @@ function JonathanFile() {
         <div>
           <img
             className="w-[50%] shadow-md rounded-lg mx-auto"
-            src={jonathanDta.img}
-            alt={jonathanDta}
+            src={photo}
+            alt={photo}
           />
 
           <div className="rounded-lg px-2  bg-green-100">
             <div className=" rounded-lg shadow-md text-center">
 
-           <div className="text-3xl mb-2">{jonathanDta.name}</div>
-            <div className="text-3xl mt-2">Composition</div>
-            <div className="text-2xl">Catogorie: {jonathanDta.Name}</div>
-            <div  className="text-2xl">flan: {jonathanDta.flan}%</div>
-            <div  className="text-2xl">bierre: {jonathanDta.bierre}%</div>
-            <div  className="text-2xl">bonnet: {jonathanDta.bonnet}%</div>
-            <div  className="text-2xl">php: {jonathanDta.php}%</div>
-            <div className="text-2xl">Eco impact: {jonathanDta.ecoImpact}</div>
+           <div className="text-3xl text-green-500 mb-2">{jonathanDta.name}</div>
+            <div className="text-2xl mt-2">Composition</div>
+            <div className="text-xl">Catogorie: {jonathanDta.Name}</div>
+            <div  className="text-xl">flan: {jonathanDta.flan}%</div>
+            <div  className="text-xl">bierre: {jonathanDta.bierre}%</div>
+            <div  className="text-xl">bonnet: {jonathanDta.bonnet}%</div>
+            <div  className="text-xl">php: {jonathanDta.php}%</div>
+            <div className="text-xl">Eco impact: {jonathanDta.ecoImpact}</div>
             <div>
+            <div className="font medium  text-green-500 text-3xl mb-3 text-center">Information</div>
               <button type="button" onClick={onClick}>
                 <svg
                   className="w-6 h-6 text-blue-500 fill-current"

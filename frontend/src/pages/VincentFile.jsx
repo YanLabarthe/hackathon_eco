@@ -1,8 +1,12 @@
+<<<<<<< HEAD
+function VincentFile({photo}) {
+=======
 import React from "react";
 import { Link } from "react-router-dom";
 
 
 function VincentFile({ photo }) {
+>>>>>>> 392aef672df045460e9c2096ca44e589f316aade
   const vincentDta = {
     name: "Vincent Vaur",
     img: "https://i.ibb.co/KzqQkpj/PXL-20220512-092514918-PORTRAIT.jpg",
@@ -78,10 +82,41 @@ function VincentFile({ photo }) {
 
     <>
     
+<<<<<<< HEAD
+      <div className=" bg-cover bg-center h-full w-full bg-green-200 p-10 text-black ">
+      <img
+              className="mx-auto rounded-lg h-30 w-[50%]"
+              src={photo}
+              alt={photo}
+            />
+        <div className="rounded-lg  m-0 shadow-lg flex bg-green-100">
+          <div className="">
+          
+            
+               
+=======
     
+>>>>>>> 392aef672df045460e9c2096ca44e589f316aade
 
             <div className="flex-1 card-block relative">
               <div className="p-6">
+<<<<<<< HEAD
+                <div className="font medium text-3xl text-green-500 text-center mb-3">{vincentDta.name}</div>
+                <div className="text-2xl mt-2 text-center">Composition</div>
+                <div className="text-xl text-center">Categorie:{vincentDta.Name}</div>
+                <div className="text-xl text-center">
+                  javascript: {vincentDta.javascript}%
+                </div>
+                <div className="text-xl text-center">bierre: {vincentDta.bierre}%</div>
+                <div className="text-xl text-center">punk: {vincentDta.punk}%</div>
+                <div className="text-xl text-center">clope: {vincentDta.clope}%</div>
+ 
+                <div className="text-xl text-center">
+                  Eco impact: {vincentDta.ecoImpact}%
+                </div>
+                <div className="text-center">
+                  <div className="font medium  text-green-500 text-3xl mb-3 text-center">Information</div>
+=======
                 <div className="font medium text-3xl  text-center text-green-500 mb-3">{vincentDta.name}</div>
                 <div className="text-2xl text-center mt-2">Composition</div>
                 <div className="text-xl text-center">Categorie:{vincentDta.Name}</div>
@@ -96,6 +131,7 @@ function VincentFile({ photo }) {
                 </h3>
                 <div className="text-center">
                   <h2 className="font medium text-2xl mb-4">Information</h2>
+>>>>>>> 392aef672df045460e9c2096ca44e589f316aade
                   <button type="button" onClick={onClick}>
                     <svg
                       className="w-6 h-6 text-blue-500 fill-current"
