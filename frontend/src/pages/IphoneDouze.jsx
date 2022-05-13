@@ -1,4 +1,6 @@
-function Iphone({ photo }) {
+import { Link } from "react-router-dom";
+
+function IphoneDouze({ photo }) {
   const iphone = {
     Name: "Phone 12",
     name: "iPhone 12",
@@ -123,12 +125,14 @@ function Iphone({ photo }) {
               <div className="text-xl">hydrogen: {iphone.hydrogen}%</div>
               <div className="text-xl">chrom: {iphone.chrom}%</div>
               <div className="text-xl">ecoImpact: {iphone.ecoImpact}%</div>
+              <Link to="/recycleiphone">
               <button
                 className="bg-blue-500 hover:bg-700 text-white font-bold py-2 px-4 mb-2 rounded"
-                onClick={onClick}
+                
               >
                 click here
               </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -140,4 +144,4 @@ function Iphone({ photo }) {
   );
 }
 
-export default Iphone;
+export default IphoneDouze;

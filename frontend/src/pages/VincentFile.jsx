@@ -93,6 +93,16 @@ function VincentFile({ photo }) {
           <h3 className="text-xl text-center">
             Eco impact: {vincentDta.ecoImpact}
           </h3>
+
+          <Link to="/reclyclevincent">
+              <button
+                className="bg-blue-500 hover:bg-700 text-white font-bold py-2 px-4 mb-2 rounded"
+                
+              >
+                Recycler
+              </button>
+              </Link>
+     
           <div className="text-center">
             <h2 className="font medium text-2xl mb-4">Information</h2>
             <button type="button" onClick={onClick}>

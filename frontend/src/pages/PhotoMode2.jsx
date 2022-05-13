@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import Webcam from "react-webcam";
 import { Link } from "react-router-dom";
-// import { Link } from "react-router-dom";
 
 function PhotoMode2({ photo, setPhoto }) {
   const inputFile = useRef();
