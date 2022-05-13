@@ -72,17 +72,17 @@ function JonathanFile({photo}) {
   }
 
   return (
-    <>
-      <div className="bg-cover  text-center bg-center h-full w-full absolute bg-pack-train p-10 text-black">
-        <div className="rounded-lg">
-         <div>
+    <div className="bg-cover bg-center h-full w-full absolute bg-pack-train p-10 text-black">
+      <div className="rounded-lg">
+        <div>
           <img
             className="w-[50%] shadow-md rounded-lg mx-auto"
             src={photo}
             alt={photo}
           />
-          <div className="relative px-2 -mt-5">
-            <div className="bg-green-200 rounded-lg shadow-md">
+
+          <div className="rounded-lg px-2  bg-green-100">
+            <div className=" rounded-lg shadow-md text-center">
 
            <div className="text-3xl text-green-500 mb-2">{jonathanDta.name}</div>
             <div className="text-2xl mt-2">Composition</div>
@@ -104,14 +104,12 @@ function JonathanFile({photo}) {
                 </svg>
               </button>
             </div>
+
             </div>
           </div>
-        
+        </div>
       </div>
-
-      </div>
-      </div>
-    </>
+    </div>
   );
 }
 

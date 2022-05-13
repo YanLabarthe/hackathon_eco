@@ -1,11 +1,11 @@
-function JonathanData({photo}){
-const jonathanData={
+function JonathanData() {
+  const jonathanData = {
     Name: "Human",
     name: "Jonathan Siaut ",
     img: "https://i.ibb.co/mvzFn8Q/PXL-20220512-100017977-PORTRAIT.jpg",
-      basket: 70,
-      bierre: 40,
-      data: 100,
+    basket: 70,
+    bierre: 40,
+    data: 100,
     infoUrl: "https://www.linkedin.com/in/jonathan-siaut/?locale=fr_FR",
     ecoImpact: 5,
     labels: [
@@ -62,41 +62,36 @@ const jonathanData={
       },
     ],
     LabelModelVersion: "2.0",
+  };
+
+  function onClick() {
+    window.location.href =
+      "https://www.linkedin.com/in/jonathan-siaut/?locale=fr_FR";
   }
 
-  function onClick(){
-    window.location.href="https://www.linkedin.com/in/jonathan-siaut/?locale=fr_FR";
-}
- 
+  return (
+    <div className="bg-cover bg-center h-full w-full absolute bg-pack-train p-10 text-black">
+      <div className="rounded-lg">
+        <div />
+        <img
+          className="w-[50%] shadow-md rounded-lg mx-auto"
+          src={jonathanData.img}
+          alt={jonathanData}
+        />
 
-    return(
-        <>
 
-        
-      <div className="bg-cover bg-center text-center h-full w-full absolute bg-pack-train p-10 text-black">
-        <div className="rounded-lg">
-          
-      <img
-        className="w-[50%] shadow-md rounded-lg mx-auto"
-        src={photo}
-        alt={photo}
-      />
-
-<div className="relative px-2 -mt-5">
-              <div className="bg-green-100 rounded-lg shadow-md">
-
-<div className="text-3xl text-green-500  ">{jonathanData.name}</div>
-      <div className="text-3xl text-green-500  mt-2">Composition</div>
-      <div className="text-xl">Catogorie:{' '}  {jonathanData.Name}</div>
-      <div className="text-xl">Basket:{' '}  {jonathanData.basket}%</div>
-      <div className="text-xl">bierre:{' '}  {jonathanData.bierre}%</div>
-      <div className="text-xl">Data: {' '} {jonathanData.data}%</div>
-      <div className="text-xl">Eco impact: {' '} {jonathanData.ecoImpact}</div>
-      <div className="text-center">
-      <div className="font medium  text-green-500 text-3xl mb-3 text-center">Information</div>
-      <button type="button" onClick={onClick}>
+<div className="text-3xl text-center ">{jonathanData.name}</div>
+      <div className="text-3xl text-center mt-2">Composition</div>
+      <div className="text-2xl text-center">Catogorie:{' '}  {jonathanData.Name}</div>
+      <div className="text-xl text-center">Basket:{' '}  {jonathanData.basket}%</div>
+      <div className="text-xl text-center">bierre:{' '}  {jonathanData.bierre}%</div>
+      <div className="text-xl text-center">Data: {' '} {jonathanData.data}%</div>
+      <div className="text-xl text-center">Eco impact: {' '} {jonathanData.ecoImpact}</div>
+      <div className="mx-auto text-center">
+     
+      <button  type="button" onClick={onClick}>
         <svg
-          className="w-6 h-6 text-blue-500 fill-current"
+          className="w-6 h-6  mx-auto text-blue-500 fill-current"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
         >
@@ -105,15 +100,10 @@ const jonathanData={
       </button>
      
       </div>
-      </div>
-      </div>
-      </div>
-      </div>
 
-
-
-        </>
-    )
+      </div>
+    </div>
+  );
 }
 
 export default JonathanData;

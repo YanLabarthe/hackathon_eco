@@ -1,4 +1,6 @@
-import recycle from "@assets/img/recycl.png";
+
+import recycle1 from "@assets/images/nonrecyclable.gif";
+
 function RecycleVincent({ photo }) {
   const vins = {
     name: "Vincent Vaur",
@@ -6,28 +8,29 @@ function RecycleVincent({ photo }) {
   };
 
   return (
+
     <>
-      <div className="bg-green-200 bg-center h-full w-full  p-10 text-black">
-        <div className="rounded-lg">
+      <div className=" bg-center h-full w-full  p-10 text-black">
+     
+
+              
+<h3> Ou recycler votre formateur? </h3>
+        <div className="rounded-lg">   
           <img
             className="md:animate-spin rounded-lg transform"
             src={vins.img}
             alt={photo}
+            width={250}
           />
-         
+          <img className="decheterie"  src={recycle1} alt="photo" width={250} />
         
-          <h3 className="mt-10">
-
-              
-              Recycler</h3>
           
-          <li>hola</li>
-          <li>One</li>
-          <li>Two</li>
-          <li>Three</li>
-        </div>
-      </div>
+          
+         </div>
+         </div>
+ 
     </>
+
   );
 }
 

@@ -1,4 +1,4 @@
-import { Wrapper, Status } from "@googlemaps/react-wrapper";
+
 function IphoneTreize(){
   const iphone = {
     Name: "Iphone 13",

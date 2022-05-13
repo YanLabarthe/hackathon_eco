@@ -1,5 +1,4 @@
-function IphoneDouze({ photo }) {
-
+function Iphone({ photo }) {
   const iphone = {
     Name: "Phone 12",
     name: "iPhone 12",
@@ -98,37 +97,47 @@ function IphoneDouze({ photo }) {
   }
 
   return (
-    <>
-      <div className="bg-center h-full w-full absolute text-center p-10 text-black">
+
+  
+      <div className=" bg-center h-full w-full absolute  p-10 text-black">
         <div className="rounded-lg">
           <div>
             <img src={photo} alt={photo} />
 
-            <div className="relative px-2 -mt-5">
-              <div className="bg-green-100 rounded-lg shadow-md">
-                <div className="text-3xl  text-green-500 mb-3">Caractéristiques</div>
-                <div className="text-xl">{"  "}{iphone.Name}</div>
-                <div className="text-xl">poids: {iphone.poids}%</div>
-                <div className="text-xl">aluminium: {iphone.aluminium}%</div>
-                <div className="text-xl">carbon: {iphone.carbon}%</div>
-                <div className="text-xl">oxygen: {iphone.oxygen}%</div>
-                <div className="text-xl">iron: {iphone.iron}%</div>
-                <div className="text-xl">silicon: {iphone.silicon}%</div>
-                <div className="text-xl">cuivre: {iphone.cuivre}%</div>
-                <div className="text-xl">cobalt: {iphone.cobalt}%</div>
-                <div className="text-xl">hydrogen: {iphone.hydrogen}%</div>
-                <div className="text-xl">chrom: {iphone.chrom}%</div>
-                <div className="text-xl">ecoImpact: {iphone.ecoImpact}%</div>
 
-                <div className="font medium  text-green-500 text-3xl mb-3 text-center">Information</div>
-                <button className="bg-blue-500 hover:bg-700 text-white font-bold py-2 px-4 mb-2 rounded"onClick={onClick}>click here</button>
+          <div className="relative px-2 -mt-5">
+            <div className="bg-green-100 rounded-lg shadow-md">
+              <div className="text-2xl">Caractéristiques</div>
+              <div className="text-xl">
+                Name:{"  "}
+                {iphone.Name}
               </div>
+              <div className="text-xl">poids: {iphone.poids}%</div>
+              <div className="text-xl">aluminium: {iphone.aluminium}%</div>
+              <div className="text-xl">carbon: {iphone.carbon}%</div>
+              <div className="text-xl">oxygen: {iphone.oxygen}%</div>
+              <div className="text-xl">iron: {iphone.iron}%</div>
+              <div className="text-xl">silicon: {iphone.silicon}%</div>
+              <div className="text-xl">cuivre: {iphone.cuivre}%</div>
+              <div className="text-xl">cobalt: {iphone.cobalt}%</div>
+              <div className="text-xl">hydrogen: {iphone.hydrogen}%</div>
+              <div className="text-xl">chrom: {iphone.chrom}%</div>
+              <div className="text-xl">ecoImpact: {iphone.ecoImpact}%</div>
+              <button
+                className="bg-blue-500 hover:bg-700 text-white font-bold py-2 px-4 mb-2 rounded"
+                onClick={onClick}
+              >
+                click here
+              </button>
             </div>
           </div>
         </div>
       </div>
-    </>
-  )
+      </div>
+
+  
+
+  );
 }
 
-export default IphoneDouze;
+export default Iphone;
