@@ -29,3 +29,7 @@ body {
   background-image:url("./assets/images/fondunis.jpg");
 min-width: 400px;
 }
+
+.text-mada {
+  font-family: "Mada", sans-serif;
+}
