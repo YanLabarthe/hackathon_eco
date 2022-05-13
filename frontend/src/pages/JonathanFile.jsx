@@ -81,8 +81,8 @@ function JonathanFile() {
             src={jonathanDta.img}
             alt={jonathanDta}
           />
-          <div className="relative px-2 -mt-5">
-            <div className="bg-green-200 rounded-lg shadow-md">
+          <div className="rounded-lg px-2  bg-green-100">
+            <div className=" rounded-lg shadow-md text-center">
 
            <div className="text-3xl mb-2">{jonathanDta.name}</div>
             <div className="text-3xl mt-2">Composition</div>

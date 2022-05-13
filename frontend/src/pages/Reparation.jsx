@@ -3,7 +3,7 @@
 function Reparation() {
     return(
 
-    <div className="reparation bg-green-200 ">
+    <div className="reparation">
     <h4>
         Vous pouvez faire réparer vos appareils auprès de nos partenaires
     </h4>

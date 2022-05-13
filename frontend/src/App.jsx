@@ -3,21 +3,22 @@ import VincentFile from "@pages/VincentFile";
 import JonathanFile from "@pages/JonathanFile";
 import JonathanData from "@pages/JonathanData";
 import { Routes, Route } from "react-router-dom";
-import Home from "@pages/Home";
 import PhotoMode from "@pages/PhotoMode";
 import { useState } from "react";
 import Iphone from "@pages/Iphone";
 import Home from "@pages/Home";
 import Marqueur from "@pages/Marqueur";
 import Chargeur from "@pages/Chargeur";
-import { Routes, Route } from "react-router-dom";
 import "../index.css";
+
 import Shoes from "@pages/Shoes";
 import Adaptateur from "@pages/Adaptateur";
 import RecycleVincent from "@pages/RecycleVincent";
 
-import PhotoMode from "@pages/PhotoMode";
+
 import Userprofile from "@pages/Userprofile";
+import RecycleShoes from "@pages/RecycleShoes";
+import RecycleIphone from "@pages/recycleIphone";
 
 function App() {
   const [photo, setPhoto] = useState("");
@@ -38,7 +39,9 @@ function App() {
         <Route path="/photoMode" element={<PhotoMode />} />
         <Route path="/chargeur" element={<Chargeur />} />
         <Route path="/adaptateur" element={<Adaptateur />} />
-        <Route path="/reclycleVincent" element={<RecycleVincent />} />
+        <Route path="/reclyclevincent" element={<RecycleVincent />} />
+        <Route path="/recycleshoes" element={<RecycleShoes/>}     />
+        <Route path="/recycleiphone"  element={<RecycleIphone/>}/>
       </Routes>
     </div>
   );

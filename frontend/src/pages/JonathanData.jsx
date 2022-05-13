@@ -85,18 +85,18 @@ const jonathanData={
 <div className="relative px-2 -mt-5">
               <div className="bg-green-200 rounded-lg shadow-md">
 
-<div className="text-3xl ">{jonathanData.name}</div>
-      <div className="text-3xl mt-2">Composition</div>
-      <div className="text-2xl">Catogorie:{' '}  {jonathanData.Name}</div>
-      <div className="text-xl">Basket:{' '}  {jonathanData.basket}%</div>
-      <div className="text-xl">bierre:{' '}  {jonathanData.bierre}%</div>
-      <div className="text-xl">Data: {' '} {jonathanData.data}%</div>
-      <div className="text-xl">Eco impact: {' '} {jonathanData.ecoImpact}</div>
-      <div>
+<div className="text-3xl text-center ">{jonathanData.name}</div>
+      <div className="text-3xl text-center mt-2">Composition</div>
+      <div className="text-2xl text-center">Catogorie:{' '}  {jonathanData.Name}</div>
+      <div className="text-xl text-center">Basket:{' '}  {jonathanData.basket}%</div>
+      <div className="text-xl text-center">bierre:{' '}  {jonathanData.bierre}%</div>
+      <div className="text-xl text-center">Data: {' '} {jonathanData.data}%</div>
+      <div className="text-xl text-center">Eco impact: {' '} {jonathanData.ecoImpact}</div>
+      <div className="mx-auto text-center">
      
-      <button type="button" onClick={onClick}>
+      <button  type="button" onClick={onClick}>
         <svg
-          className="w-6 h-6 text-blue-500 fill-current"
+          className="w-6 h-6  mx-auto text-blue-500 fill-current"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
         >
