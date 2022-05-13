@@ -6,17 +6,14 @@ import LogoAnime from "./LogoAnime";
 export default function Home() {
   return (
     <div className="Home-page">
-     
       <div className="flexmoi">
-      <div className="header">
-      
-      </div>
+        <div className="header"></div>
         <div>
           <img className="logobiom" img src={logobiom} alt="plante" />
           <h1>Recylez Facilement</h1>
         </div>
         <div>
-          <Link to="/PhotoMode">
+          <Link to="/photomode">
             <LogoAnime />
           </Link>
         </div>
