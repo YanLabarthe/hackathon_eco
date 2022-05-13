@@ -8,7 +8,7 @@ import Userprofile from "@pages/Userprofile";
 
 function App() {
   return (
-    <div className="homepage bg-green-200  ">
+    <div className="homepage">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/scan" element={<Scan />} />
