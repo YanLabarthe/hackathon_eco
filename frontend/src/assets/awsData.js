@@ -68,7 +68,7 @@ const awsData = [
   },
   {
     name: "Jonathan Plantey ",
-    img: "https://ibb.co/pnHZfHf",
+    img: "https://i.ibb.co/25zPvzv/PXL-20220512-100022411-PORTRAIT.jpg",
     comp: {
       flan: 50,
       bierre: 30,
