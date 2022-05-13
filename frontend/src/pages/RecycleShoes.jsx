@@ -1,3 +1,4 @@
+
 import React from "react";
 import photod from "@assets/images/captureshooes.png"
 import textile from "@assets/images/fichetextile.png"
@@ -18,3 +19,4 @@ function RecycleShoes( ) {
   }
   
   export default RecycleShoes;
+

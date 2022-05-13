@@ -18,7 +18,7 @@ function PhotoMode({ photo, setPhoto }) {
       <Webcam className="h-full w-auto mx-auto" />
       {photo && (
         <>
-          <div className="flex flex-col space-y-4 min-w-screen h-screen animated fadeIn faster  fixed  left-0 top-0 flex justify-center items-center inset-0 z-50 outline-none focus:outline-none ">
+          <div className="flex flex-col space-y-4 min-w-screen h-screen animated fadeIn faster  fixed  left-0 top-0 justify-center items-center inset-0 z-50 outline-none focus:outline-none ">
             <div className="flex flex-col relative mx-auto inset-x-0 text-center bottom-20 bg-gray-100 border-2 border-black rounded-lg">
               <div className="flex items-center justify-between pr-2">
                 <div className="flex items-center">
@@ -36,6 +36,7 @@ function PhotoMode({ photo, setPhoto }) {
                     </div>
                   </div>
                 </div>
+
                 <button
                   type="button"
                   className="flex-no-shrink bg-green-400 px-5 ml-4 py-2 text-sm shadow-sm hover:shadow-lg font-medium tracking-wider border-2 border-green-800 text-black rounded-full"
@@ -46,45 +47,35 @@ function PhotoMode({ photo, setPhoto }) {
             </div>
           </div>
 
-          <Link to="iphone">
-            <div className="flex flex-col space-y-4 min-w-screen h-screen animated fadeIn faster  fixed  left-0 top-[90px] flex justify-center items-center inset-0 z-50 outline-none focus:outline-none ">
-              <div className="flex flex-col relative mx-auto inset-x-0 text-center bottom-20 bg-gray-100 border-2 border-black rounded-lg">
-                <div className="flex items-center justify-between pr-2">
-                  <div className="flex items-center">
-                    <img
-                      src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone11-purple-select-2019_GEO_EMEA?wid=940&hei=1112&fmt=png-alpha&.v=1567021766320"
-                      alt="iphone"
-                      className="w-auto h-20 pb-2"
-                    />
-                    <div className="flex flex-col ml-3">
-                      <div className="font-medium text-black leading-none ">
-                        Iphone 12
-                      </div>
-                      <div className="text-sm text-black leading-none mt-1">
-                        Produit électronique - téléphone portable
-                      </div>
-                    </div>
-                  </div>
-                  <button
-                    type="button"
-                    className="flex-no-shrink bg-green-400 px-5 ml-4 py-2 text-sm shadow-sm hover:shadow-lg font-medium tracking-wider border-2 border-green-800 text-black rounded-full"
-                  >
-                    Recycle
-                  </button>
-                </div>
-              </div>
-            </div>
-          </Link>
-
-          <Link to="iphone">
-            <div className="flex flex-col space-y-4 min-w-screen h-screen animated fadeIn faster  fixed  left-0 top-[165px] flex justify-center items-center inset-0 z-50 outline-none focus:outline-none ">
-              <div className="flex flex-col relative mx-auto inset-x-0 text-center bottom-20 bg-gray-100 border-2 border-black rounded-lg">
+          {/* 
+          <div className="flex flex-col space-y-4 min-w-screen h-screen animated fadeIn faster  fixed  left-0 top-[90px] justify-center items-center inset-0 z-50 outline-none focus:outline-none ">
+            <div className="flex flex-col relative mx-auto inset-x-0 text-center bottom-20 bg-gray-100 border-2 border-black rounded-lg">
+              <Link to="/iphone">
                 <div className="flex items-center justify-between p-3">
-                  Le produit n'est pas dans la selection
+                  Fiche produit photographiée
                 </div>
-              </div>
+              </Link>
             </div>
-          </Link>
+          </div>
+
+          <div className="flex flex-col space-y-4 min-w-screen h-screen animated fadeIn faster  fixed  left-0 top-[165px] justify-center items-center inset-0 z-50 outline-none focus:outline-none ">
+            <div className="flex flex-col relative mx-auto inset-x-0 text-center bottom-20 bg-gray-100 border-2 border-black rounded-lg">
+              <Link to="/addproduct">
+                <div className="flex items-center justify-between p-3">
+                  Le produit n'est pas reconnue
+                </div>
+              </Link>
+            </div>
+          </div> */}
+          <div className="flex flex-col space-y-4 min-w-screen h-screen animated fadeIn faster  fixed  left-0 top-[165px] justify-center items-center inset-0 z-50 outline-none focus:outline-none ">
+            <div className="flex flex-col relative mx-auto inset-x-0 text-center bottom-20 bg-gray-100 border-2 border-black rounded-lg">
+              <Link to="/iphone">
+                <div className="flex items-center justify-between p-3">
+                  Produit photographié - Iphone 12
+                </div>
+              </Link>
+            </div>
+          </div>
         </>
       )}
 

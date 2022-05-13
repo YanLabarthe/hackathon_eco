@@ -75,21 +75,11 @@ function VincentFile({ photo }) {
   }
 
   return (
+
     <>
     
-      <div className=" bg-cover bg-center h-full w-full p-10 text-black ">
-      <img
-              className="mx-auto rounded-lg h-30 w-[50%]"
-              src={vincentDta.img}
-              alt={""}
-            />
-        <div className="rounded-lg  m-0 shadow-lg flex bg-green-100">
-          <div className="">
-          
-            
-               
+    
 
-            </div>
             <div className="flex-1 card-block relative">
               <div className="p-6">
                 <div className="font medium text-3xl  text-center text-green-500 mb-3">{vincentDta.name}</div>
@@ -118,11 +108,12 @@ function VincentFile({ photo }) {
                 </div>
                 <Link to="/PhotoMode3"></Link>
              
+
+          </div>
+
         </div>
       </div>
-      </div>
-      </div>
-    </>
+    </div>
   );
 }
 

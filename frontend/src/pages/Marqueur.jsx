@@ -29,32 +29,29 @@ function Markeur({ photo }) {
     ],
   };
   return (
-    <>
-      <div className="bg-cover bg-center h-full w-full absolute bg-pack-train p-10 text-black">
-        <div className="rounded-lg">
-          <div>
-            <img src={photo} alt={photo} />
+    <div className="bg-cover bg-center h-full w-full absolute bg-pack-train p-10 text-black">
+      <div className="rounded-lg">
+        <div>
+          <img src={photo} alt={photo} />
 
-            <div className="relative px-2 -mt-5">
-              <div className="bg-green-200 rounded-lg shadow-md">
-                <div className="text-2xl">Caractéristiques</div>
-                <div className="text-xl">
-                  Name:{"  "}
-                  {marqueur.name}
-                </div>
-                <div className="text-xl">pen: {marqueur.pen}</div>
-                <div className="text-xl">plastic: {marqueur.plastic}%</div>
-                <div className="text-xl">toluene: {marqueur.toluene}%</div>
-                <div className="text-xl">xylene: {marqueur.xylene}%</div>
-                <div className="text-xl">confidence: {marqueur.Confidence}</div>
-                <div className="text-xl">ecoImpact: {marqueur.ecoImpact}%</div>
-              
+          <div className="relative px-2 -mt-5">
+            <div className="bg-green-200 rounded-lg shadow-md">
+              <div className="text-2xl">Caractéristiques</div>
+              <div className="text-xl">
+                Name:{"  "}
+                {marqueur.name}
               </div>
+              <div className="text-xl">pen: {marqueur.pen}</div>
+              <div className="text-xl">plastic: {marqueur.plastic}%</div>
+              <div className="text-xl">toluene: {marqueur.toluene}%</div>
+              <div className="text-xl">xylene: {marqueur.xylene}%</div>
+              <div className="text-xl">confidence: {marqueur.Confidence}</div>
+              <div className="text-xl">ecoImpact: {marqueur.ecoImpact}%</div>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

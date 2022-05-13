@@ -1,11 +1,11 @@
-function JonathanData(){
-const jonathanData={
+function JonathanData() {
+  const jonathanData = {
     Name: "Human",
     name: "Jonathan Siaut ",
     img: "https://i.ibb.co/mvzFn8Q/PXL-20220512-100017977-PORTRAIT.jpg",
-      basket: 70,
-      bierre: 40,
-      data: 100,
+    basket: 70,
+    bierre: 40,
+    data: 100,
     infoUrl: "https://www.linkedin.com/in/jonathan-siaut/?locale=fr_FR",
     ecoImpact: 5,
     labels: [
@@ -62,28 +62,23 @@ const jonathanData={
       },
     ],
     LabelModelVersion: "2.0",
+  };
+
+  function onClick() {
+    window.location.href =
+      "https://www.linkedin.com/in/jonathan-siaut/?locale=fr_FR";
   }
 
-  function onClick(){
-    window.location.href="https://www.linkedin.com/in/jonathan-siaut/?locale=fr_FR";
-}
- 
+  return (
+    <div className="bg-cover bg-center h-full w-full absolute bg-pack-train p-10 text-black">
+      <div className="rounded-lg">
+        <div />
+        <img
+          className="w-[50%] shadow-md rounded-lg mx-auto"
+          src={jonathanData.img}
+          alt={jonathanData}
+        />
 
-    return(
-        <>
-
-        
-      <div className="bg-cover bg-center h-full w-full absolute bg-pack-train p-10 text-black">
-        <div className="rounded-lg">
-          <div></div>
-      <img
-        className="w-[50%] shadow-md rounded-lg mx-auto"
-        src={jonathanData.img}
-        alt={jonathanData}
-      />
-
-<div className="relative px-2 -mt-5">
-              <div className="bg-green-200 rounded-lg shadow-md">
 
 <div className="text-3xl text-center ">{jonathanData.name}</div>
       <div className="text-3xl text-center mt-2">Composition</div>
@@ -105,15 +100,10 @@ const jonathanData={
       </button>
      
       </div>
-      </div>
-      </div>
-      </div>
-      </div>
 
-
-
-        </>
-    )
+      </div>
+    </div>
+  );
 }
 
 export default JonathanData;

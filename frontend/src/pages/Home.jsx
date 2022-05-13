@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="Home-page">
       <div className="flexmoi">
-        <div className="header"></div>
+        <div className="header" />
         <div>
           <img className="logobiom" img src={logobiom} alt="plante" />
           <h1>Recylez Facilement</h1>

@@ -1,3 +1,4 @@
+
 import React from "react";
 import photo from "@assets/images/recycle.png"
 import fiche from "@assets/images/fiche.png"
@@ -32,3 +33,4 @@ function RecycleIphone() {
   }
   
   export default RecycleIphone;
+

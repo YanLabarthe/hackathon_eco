@@ -1,4 +1,6 @@
+
 import recycle1 from "@assets/images/nonrecyclable.gif";
+
 function RecycleVincent({ photo }) {
   const vins = {
     name: "Vincent Vaur",
@@ -6,6 +8,7 @@ function RecycleVincent({ photo }) {
   };
 
   return (
+
     <>
       <div className=" bg-center h-full w-full  p-10 text-black">
      
@@ -27,6 +30,7 @@ function RecycleVincent({ photo }) {
          </div>
  
     </>
+
   );
 }
 

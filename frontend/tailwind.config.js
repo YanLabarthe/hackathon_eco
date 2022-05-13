@@ -2,7 +2,9 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     backgroundImage: {
+
       'pack-train': "url('./assets/images/fondunis.jpg')",
+
     },
     extend: {
       keyframes: {
@@ -17,7 +19,7 @@ module.exports = {
           "100%": { transform: "rotate(0.0deg)" },
         },
       },
-      
+
       animation: {
         "waving-hand": "wave 2s linear infinite",
       },
